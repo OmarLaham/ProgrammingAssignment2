@@ -26,6 +26,7 @@ cacheSolve <- function(x, ...) {
       return(ic)
     }
     m <- x$get()
-    m <- solve(m, ...)
+    im <- solve(m, ...)
+    x$setic(im)
     m
 }
